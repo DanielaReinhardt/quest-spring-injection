@@ -1,12 +1,15 @@
 package com.wildcodeschool.wildandwizard.repository;
-
+//hier fehlen eventuell noch Imports
 import com.wildcodeschool.wildandwizard.entity.Wizard;
+import org.springframework.stereotype.Component;
 
 import java.sql.Date;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+//irgendein @Component oder @Repository oder @Service - auf Baeldung nachlesen
+@Component
 public class WizardRepository implements WizardDao {
 
     private static List<Wizard> wizards = new ArrayList<>(
